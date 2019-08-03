@@ -1,1 +1,31 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int startNumberOne = 1;
+            int startNumberTwo = 1;
+            int total = 0;
+            int numberOnePlusNumberTwo = 0;
+            int totalEven = 0;
+
+            while (total < 4000000)
+            {
+                if (total % 2 == 0)
+                {
+                    totalEven += total;
+                }
+                numberOnePlusNumberTwo = startNumberOne + startNumberTwo;
+                total = numberOnePlusNumberTwo;
+                startNumberOne = startNumberTwo;
+                startNumberTwo = total;
+            }
+            Console.WriteLine(totalEven);
+            Console.WriteLine(total);
+        }
+    }
+}
 
