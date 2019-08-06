@@ -1,0 +1,25 @@
+using System;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int divider = 2;
+            long number = 53;
+            while (number > 1)
+            {
+                if (number % divider == 0)
+                {
+                    number /= divider;
+                }
+                else
+                {
+                    divider++;
+                }
+            }
+            Console.WriteLine(divider);
+        }
+    }
+}
