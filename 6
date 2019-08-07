@@ -1,0 +1,27 @@
+using System;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int answer1 = 0;
+            int answer2 = 0;
+            int totalAnswer2 = 0;
+            for (int i = 1; i <= 100 ; i++)
+            {
+                answer1 += i * i;
+            }
+
+            for (int i = 1; i <= 100; i++)
+            {
+                answer2 += i;
+                totalAnswer2 = answer2 * answer2;
+            }
+
+            int total = totalAnswer2 - answer1;
+            Console.WriteLine(total);
+        }
+    }
+}
