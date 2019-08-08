@@ -11,7 +11,7 @@ namespace ConsoleApp5
 
             for (int i = 0; i < series.Length - 12; i++)
             {
-                long product = int.Parse(series.Substring(i, 1)) * int.Parse(series.Substring(i + 1, 1)) * int.Parse(series.Substring(i + 2, 1)) * int.Parse(series.Substring(i + 3, 1)) * int.Parse(series.Substring(i + 4, 1)) * int.Parse(series.Substring(i + 5, 1)) * int.Parse(series.Substring(i + 6, 1)) * int.Parse(series.Substring(i + 7, 1)) * int.Parse(series.Substring(i + 8, 1)) * int.Parse(series.Substring(i + 9, 1)) * int.Parse(series.Substring(i + 10, 1)) * int.Parse(series.Substring(i + 11, 1)) * int.Parse(series.Substring(i + 12, 1));
+                long product = long.Parse(series.Substring(i, 1)) * long.Parse(series.Substring(i + 1, 1)) * long.Parse(series.Substring(i + 2, 1)) * long.Parse(series.Substring(i + 3, 1)) * long.Parse(series.Substring(i + 4, 1)) * long.Parse(series.Substring(i + 5, 1)) * long.Parse(series.Substring(i + 6, 1)) * long.Parse(series.Substring(i + 7, 1)) * long.Parse(series.Substring(i + 8, 1)) * long.Parse(series.Substring(i + 9, 1)) * long.Parse(series.Substring(i + 10, 1)) * long.Parse(series.Substring(i + 11, 1)) * long.Parse(series.Substring(i + 12, 1));
 
                 if (product > biggestProduct)
                 {
